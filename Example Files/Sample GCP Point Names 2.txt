@@ -1,0 +1,13 @@
+Upper Right Corner of Building Overhang
+Bottom Right Corner of Leftmost Storm Drain
+Bottom Right Corner of Second Leftmost Storm Drain
+Top Right of Dark Building Corner
+Top Right of First Light Building Corner 
+Top Right of Second Light Building Corner 
+Top Right of Third Light Building Corner 
+Left of Bottom Horizontal Bar of Power Tower
+Right of Bottom Horizontal Bar of Power Tower
+Left of Second Bottom Horizontal Bar of Power Tower
+Right of Second Bottom Horizontal Bar of Power Tower
+Left of Third Bottom Horizontal Bar of Power Tower
+Right of Third Bottom Horizontal Bar of Power Tower

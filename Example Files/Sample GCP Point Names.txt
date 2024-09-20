@@ -1,0 +1,12 @@
+Leftmost Building Rooftop
+Second Leftmost Building Rooftop
+Third Leftmost Building Rooftop
+Upper Right Corner of Building Overhang
+Bottom Right Corner of Leftmost Storm Drain
+Bottom Right Corner of Second Leftmost Storm Drain
+Left of Bottom Horizontal Bar of Power Tower
+Right of Bottom Horizontal Bar of Power Tower
+Left of Second Bottom Horizontal Bar of Power Tower
+Right of Second Bottom Horizontal Bar of Power Tower
+Left of Third Bottom Horizontal Bar of Power Tower
+Right of Third Bottom Horizontal Bar of Power Tower
