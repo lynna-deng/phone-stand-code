@@ -75,11 +75,11 @@ These three feature detection-description methods were chosen for being the most
 3. The aligned image will be saved as `[photo file name]_registered.[registration file type]`.
 4. Apply `stereoCam_reconstructScene` to the two registered input photos to create your 3D reconstruction.
 
-The figures below were generated using the SIFT method to align `C1 Sample Photo IMG_4211` (input) to `C1 Downstream Reference IMG_7948.jpg` (reference).
+The figures below were generated using the SIFT method to align `C2 Sample Photo IMG_4210` (input) to `C2 Downstream Reference IMG_7949.jpg` (reference). Note that the system is able to handle rotated images.
 
-<img src="https://raw.githubusercontent.com/lynna-deng/phone-stand-code/refs/heads/main/README%20Figures/C1%20Sample%20Photo%20IMG_4211%20Auto%20Aligned%20Images%2C%20Full.png" height="250"/>  <img src="https://raw.githubusercontent.com/lynna-deng/phone-stand-code/refs/heads/main/README%20Figures/C1%20Sample%20Photo%20IMG_4211%20Auto%20Aligned%20Images%2C%20Cropped.png" height="250"/>  
+<img src="https://raw.githubusercontent.com/lynna-deng/phone-stand-code/refs/heads/main/README%20Figures/C2%20Sample%20Photo%20IMG_4210%20Aligned%20Images%2C%20Full.png" height="250"/>  <img src="https://raw.githubusercontent.com/lynna-deng/phone-stand-code/refs/heads/main/README%20Figures/C2%20Sample%20Photo%20IMG_4210%20Aligned%20Images%2C%20Cropped.png" height="250"/>  
 
-<img src="https://raw.githubusercontent.com/lynna-deng/phone-stand-code/refs/heads/main/README%20Figures/C1%20Sample%20Photo%20IMG_4211%20Auto%20Aligning%20Images%20Process.png" height="500"/>
+<img src="https://raw.githubusercontent.com/lynna-deng/phone-stand-code/refs/heads/main/README%20Figures/C2%20Sample%20Photo%20IMG_4210%20Aligning%20Images%20Process.png" height="500"/>
 
 ### Masking
 
