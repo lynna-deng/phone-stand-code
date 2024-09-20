@@ -121,7 +121,7 @@ The disparity map shows the apparent distance travelled by a particular object v
 
 <img src="https://raw.githubusercontent.com/lynna-deng/phone-stand-code/refs/heads/main/README%20Figures/IMG_4210%2C%20IMG_4211%20Sample%20Reconstruction%2C%20Disparity%20Map.png" height="250"/>
 
-The final 3D reconstruction!
+Below is a photo and video of the final 3D reconstruction!
 
 <img src="https://raw.githubusercontent.com/lynna-deng/phone-stand-code/refs/heads/main/README%20Figures/IMG_4210%2C%20IMG_4211%20Sample%20Reconstruction%2C%20Angle%201.png" height="250"/>
 
