@@ -77,7 +77,7 @@ These three feature detection-description methods were chosen for being the most
 
 The figures below were generated using the SIFT method to align `C2 Sample Photo IMG_4210` (input) to `C2 Downstream Reference IMG_7949.jpg` (reference). Note that the system is able to handle rotated images.
 
-<img src="https://raw.githubusercontent.com/lynna-deng/phone-stand-code/refs/heads/main/README%20Figures/C2%20Sample%20Photo%20IMG_4210%20Aligned%20Images%2C%20Full.png" height="250"/>  <img src="https://raw.githubusercontent.com/lynna-deng/phone-stand-code/refs/heads/main/README%20Figures/C2%20Sample%20Photo%20IMG_4210%20Aligned%20Images%2C%20Cropped.png" height="250"/>  
+<img src="https://raw.githubusercontent.com/lynna-deng/phone-stand-code/refs/heads/main/README%20Figures/C2%20Sample%20Photo%20IMG_4210%20Aligned%20Images%2C%20Full.png" width="250"/>  <img src="https://raw.githubusercontent.com/lynna-deng/phone-stand-code/refs/heads/main/README%20Figures/C2%20Sample%20Photo%20IMG_4210%20Aligned%20Images%2C%20Cropped.png" height="250"/>  
 
 <img src="https://raw.githubusercontent.com/lynna-deng/phone-stand-code/refs/heads/main/README%20Figures/C2%20Sample%20Photo%20IMG_4210%20Aligning%20Images%20Process.png" height="500"/>
 
