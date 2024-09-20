@@ -32,9 +32,9 @@ If the input and reference photos are from very different time points or otherwi
 
 #### *Detailed Process*
 
-1. Describe each ground control point on a separate line in a text document. `Sample GCP Point Names.txt` is provided as an example. The ground control points described in this file are labeled below.
+1. Describe each ground control point on a separate line in a text document. `Sample GCP Point Names.txt` and `Sample GCP Point Names 2.txt` are provided as examples for the C1 and C2 sample images, respectively. The ground control points described in these files are labeled below.
 
-[CANVA SLIDE 1]
+  ![C1 Ground Control Points]([https://raw.githubusercontent.com/lynna-deng/phone-stand-code/refs/heads/main/README%20Figures/GCPs%20in%20Sample%20Text%20File.png?token=GHSAT0AAAAAACXN3SVQ65JL7J4JDWUO7WGOZXNMCDA])
 
 2. Replace `C1_input_filepath`, `C2_input_filepath`, `C1_reference_filepath`, and `C2_reference_filepath` with the desired files or use the sample file paths already provided.
 3. Apply `stereoCam_alignImages`  with your filepaths, the desired output image filetype, the text file, and ‘Manual’ for `’DetectionMethod’`. An example is provided in Option 1 of `stereoCam_main.m`.
