@@ -49,7 +49,9 @@ If the input and reference photos are from very different time points or otherwi
 
 The figures below were generated using the ground control points in `Sample GCP Point Names.txt` to align `C1 Sample Photo IMG_4211` (input) to `C1 Downstream Reference IMG_7948.jpg` (reference). In the anaglyphs, the reference image is shown in red, and the input image is shown in cyan. There are several regions where the true color is visible, indicating the alignment worked well in these regions. 
 
-<img src="https://raw.githubusercontent.com/lynna-deng/phone-stand-code/refs/heads/main/README%20Figures/C1%20Sample%20Photo%20IMG_4211%20Manually%20Aligned%20Images%2C%20Full.png" height="250"/>  <img src="https://raw.githubusercontent.com/lynna-deng/phone-stand-code/refs/heads/main/README%20Figures/C1%20Sample%20Photo%20IMG_4211%20Manually%20Aligned%20Images%2C%20Cropped.png" height="250"/>  <img src="https://raw.githubusercontent.com/lynna-deng/phone-stand-code/refs/heads/main/README%20Figures/C1%20Sample%20Photo%20IMG_4211%20Manually%20Aligning%20Images%20Process.png" height="250"/>
+<img src="https://raw.githubusercontent.com/lynna-deng/phone-stand-code/refs/heads/main/README%20Figures/C1%20Sample%20Photo%20IMG_4211%20Manually%20Aligned%20Images%2C%20Full.png" height="250"/>  <img src="https://raw.githubusercontent.com/lynna-deng/phone-stand-code/refs/heads/main/README%20Figures/C1%20Sample%20Photo%20IMG_4211%20Manually%20Aligned%20Images%2C%20Cropped.png" height="250"/>
+
+<img src="https://raw.githubusercontent.com/lynna-deng/phone-stand-code/refs/heads/main/README%20Figures/C1%20Sample%20Photo%20IMG_4211%20Manually%20Aligning%20Images%20Process.png" height="500"/>
 
 The photos’ ground control points will be saved as `[photo file name]_GCP.mat`. If these same photos are reused, these .mat files can be loaded in as the `reference_photo_GCP` and `unaligned_photo_GCP` inputs to `stereoCam_alignImages`. If both have been previously selected, no text file is necessary. An example is provided in Option 2 of `stereoCam_main.m`.
 
@@ -75,7 +77,9 @@ These three feature detection-description methods were chosen for being the most
 
 The figures below were generated using the SIFT method to align `C1 Sample Photo IMG_4211` (input) to `C1 Downstream Reference IMG_7948.jpg` (reference).
 
-<img src="https://raw.githubusercontent.com/lynna-deng/phone-stand-code/refs/heads/main/README%20Figures/C1%20Sample%20Photo%20IMG_4211%20Auto%20Aligned%20Images%2C%20Full.png" height="250"/>  <img src="https://raw.githubusercontent.com/lynna-deng/phone-stand-code/refs/heads/main/README%20Figures/C1%20Sample%20Photo%20IMG_4211%20Auto%20Aligned%20Images%2C%20Cropped.png" height="250"/>  <img src="https://raw.githubusercontent.com/lynna-deng/phone-stand-code/refs/heads/main/README%20Figures/C1%20Sample%20Photo%20IMG_4211%20Auto%20Aligning%20Images%20Process.png" height="250"/>
+<img src="https://raw.githubusercontent.com/lynna-deng/phone-stand-code/refs/heads/main/README%20Figures/C1%20Sample%20Photo%20IMG_4211%20Auto%20Aligned%20Images%2C%20Full.png" height="250"/>  <img src="https://raw.githubusercontent.com/lynna-deng/phone-stand-code/refs/heads/main/README%20Figures/C1%20Sample%20Photo%20IMG_4211%20Auto%20Aligned%20Images%2C%20Cropped.png" height="250"/>  
+
+<img src="https://raw.githubusercontent.com/lynna-deng/phone-stand-code/refs/heads/main/README%20Figures/C1%20Sample%20Photo%20IMG_4211%20Auto%20Aligning%20Images%20Process.png" height="500"/>
 
 ### Masking
 
@@ -97,7 +101,7 @@ The photos’ masks will be saved as `[photo file name]_mask.mat`. If these same
 
 The figure below shows the process of aligning images when a mask is used.
 
-<img src="https://raw.githubusercontent.com/lynna-deng/phone-stand-code/refs/heads/main/README%20Figures/C1%20Sample%20Photo%20IMG_4211%20Masked%20Alignment%20Example.png" height="250"/>
+<img src="https://raw.githubusercontent.com/lynna-deng/phone-stand-code/refs/heads/main/README%20Figures/C1%20Sample%20Photo%20IMG_4211%20Masked%20Alignment%20Example.png" height="500"/>
 
 ## Step 2: 3D Reconstruction
 
