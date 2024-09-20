@@ -34,17 +34,21 @@ If the input and reference photos are from very different time points or otherwi
 
 1. Describe each ground control point on a separate line in a text document. `Sample GCP Point Names.txt` and `Sample GCP Point Names 2.txt` are provided as examples for the C1 and C2 sample images, respectively. The ground control points described in these files are labeled below.
 
-  ![C1 Ground Control Points]([https://raw.githubusercontent.com/lynna-deng/phone-stand-code/refs/heads/main/README%20Figures/GCPs%20in%20Sample%20Text%20File.png?token=GHSAT0AAAAAACXN3SVQ65JL7J4JDWUO7WGOZXNMCDA])
+   <img src="https://raw.githubusercontent.com/lynna-deng/phone-stand-code/refs/heads/main/README%20Figures/GCPs%20in%20Sample%20Text%20File%201.png" height="250"/>
 
-2. Replace `C1_input_filepath`, `C2_input_filepath`, `C1_reference_filepath`, and `C2_reference_filepath` with the desired files or use the sample file paths already provided.
-3. Apply `stereoCam_alignImages`  with your filepaths, the desired output image filetype, the text file, and ‘Manual’ for `’DetectionMethod’`. An example is provided in Option 1 of `stereoCam_main.m`.
-4. Select the ground control points as accurately as possible in the input and reference photos. A video guide for point selection is below. [VIDEO GUIDE - MANUAL GCP SELECTION]
-5. The aligned image will be saved as `[photo file name]_registered.[registration file type]`.
-6. Apply `stereoCam_reconstructScene` to the two registered input photos to create your 3D reconstruction.
+   <img src="https://raw.githubusercontent.com/lynna-deng/phone-stand-code/refs/heads/main/README%20Figures/GCPs%20in%20Sample%20Text%20File%202.png" height="250"/>
 
-The image below was generated using the ground control points in `Sample GCP Point Names.txt` to align `C1 Sample Photo IMG_4211` (input) to `C1 Downstream Reference IMG_7948.jpg` (reference). In this anaglyph, the reference image is shown in red, and the input image is shown in cyan. There are several regions where the true color is visible, indicating the alignment worked well in these regions. 
+3. Replace `C1_input_filepath`, `C2_input_filepath`, `C1_reference_filepath`, and `C2_reference_filepath` with the desired files or use the sample file paths already provided.
+4. Apply `stereoCam_alignImages`  with your filepaths, the desired output image filetype, the text file, and ‘Manual’ for `’DetectionMethod’`. An example is provided in Option 1 of `stereoCam_main.m`.
+5. Select the ground control points as accurately as possible in the input and reference photos. A video guide for GCP selection is below.
+   [![GCP Selection Video Guide](https://img.youtube.com/vi/wKJKCFUT2Hk/0.jpg)](https://www.youtube.com/watch?v=wKJKCFUT2Hk)
 
-[EXAMPLE OF USING MANUAL ALIGNMENT FROM C1]
+6. The aligned image will be saved as `[photo file name]_registered.[registration file type]`.
+7. Apply `stereoCam_reconstructScene` to the two registered input photos to create your 3D reconstruction.
+
+The figures below were generated using the ground control points in `Sample GCP Point Names.txt` to align `C1 Sample Photo IMG_4211` (input) to `C1 Downstream Reference IMG_7948.jpg` (reference). In the anaglyphs, the reference image is shown in red, and the input image is shown in cyan. There are several regions where the true color is visible, indicating the alignment worked well in these regions. 
+
+<img src="https://raw.githubusercontent.com/lynna-deng/phone-stand-code/refs/heads/main/README%20Figures/C1%20Sample%20Photo%20IMG_4211%20Manually%20Aligned%20Images%2C%20Full.png" height="250"/>  <img src="https://raw.githubusercontent.com/lynna-deng/phone-stand-code/refs/heads/main/README%20Figures/C1%20Sample%20Photo%20IMG_4211%20Manually%20Aligned%20Images%2C%20Cropped.png" height="250"/>  <img src="https://raw.githubusercontent.com/lynna-deng/phone-stand-code/refs/heads/main/README%20Figures/C1%20Sample%20Photo%20IMG_4211%20Manually%20Aligning%20Images%20Process.png" height="250"/>
 
 The photos’ ground control points will be saved as `[photo file name]_GCP.mat`. If these same photos are reused, these .mat files can be loaded in as the `reference_photo_GCP` and `unaligned_photo_GCP` inputs to `stereoCam_alignImages`. If both have been previously selected, no text file is necessary. An example is provided in Option 2 of `stereoCam_main.m`.
 
@@ -68,6 +72,10 @@ These three feature detection-description methods were chosen for being the most
 3. The aligned image will be saved as `[photo file name]_registered.[registration file type]`.
 4. Apply `stereoCam_reconstructScene` to the two registered input photos to create your 3D reconstruction.
 
+The figures below were generated using the SIFT method to align `C1 Sample Photo IMG_4211` (input) to `C1 Downstream Reference IMG_7948.jpg` (reference).
+
+<img src="https://raw.githubusercontent.com/lynna-deng/phone-stand-code/refs/heads/main/README%20Figures/C1%20Sample%20Photo%20IMG_4211%20Auto%20Aligned%20Images%2C%20Full.png" height="250"/>  <img src="https://raw.githubusercontent.com/lynna-deng/phone-stand-code/refs/heads/main/README%20Figures/C1%20Sample%20Photo%20IMG_4211%20Auto%20Aligned%20Images%2C%20Cropped.png" height="250"/>  <img src="https://raw.githubusercontent.com/lynna-deng/phone-stand-code/refs/heads/main/README%20Figures/C1%20Sample%20Photo%20IMG_4211%20Auto%20Aligning%20Images%20Process.png" height="250"/>
+
 ### Masking
 
 #### *Overview*
@@ -78,33 +86,39 @@ If there are regions in the images that share no features in common and may ther
 
 1. When calling `stereoCam_alignImages`, set `useMask` to true. An example is provided in Option 4 of `stereoCam_main.m`.
 2. Select the vertices of the desired polygonal mask in the input and reference photos. A video guide for mask selection is below.
-[VIDEO GUIDE - MASK SELECTION]
-3. The aligned image will be saved as `[photo file name]_registered.[registration file type]`.
-4. Apply `stereoCam_reconstructScene` to the two registered input photos to create your 3D reconstruction.
+   [![GCP Selection Video Guide](https://img.youtube.com/vi/7PGJ43YLV-Y/0.jpg)](https://www.youtube.com/watch?v=7PGJ43YLV-Y)
+4. The aligned image will be saved as `[photo file name]_registered.[registration file type]`.
+5. Apply `stereoCam_reconstructScene` to the two registered input photos to create your 3D reconstruction.
 
 The photos’ masks will be saved as `[photo file name]_mask.mat`. If these same photos are reused, these .mat files can be loaded in as the `reference_photo_mask` and `unaligned_photo_mask` inputs to `stereoCam_alignImages`. An example is provided in Option 5 of `stereoCam_main.m.`.
+
+The figure below shows the process of aligning images when a mask is used.
+
+<img src="https://raw.githubusercontent.com/lynna-deng/phone-stand-code/refs/heads/main/README%20Figures/C1%20Sample%20Photo%20IMG_4211%20Masked%20Alignment%20Example.png" height="250"/>
 
 ## Step 2: 3D Reconstruction
 
 Once alignment is completed for a pair of input images, one from each holder of the phone stand, a 3D reconstruction can be generated using `stereoCam_reconstructScene`! Make sure to input the photos as shown below: 
 
-[GRAPHIC OF C1/C2]
+<img src="https://raw.githubusercontent.com/lynna-deng/phone-stand-code/refs/heads/main/README%20Figures/C1%20and%20C2%20Cameras.png" height="250"/>
 
 The 3D reconstructions are generated using the stereoParams calibration file stored in `calibrated_stereoParams.mat`. 
 
 The `stereoCam_reconstructScene` function uses MATLAB’s built-in reconstructScene, which generates multiple figures so you can monitor the progress of the reconstruction: 
 
-[USED SECTION IMAGE]
-
 The two camera angles share enough information to generate a 3D reconstruction of this region of the river. The C1 angle is shown in red, and the C2 angle is shown in cyan.
 
-[DISPARITY MAP]
+<img src="https://raw.githubusercontent.com/lynna-deng/phone-stand-code/refs/heads/main/README%20Figures/IMG_4210%2C%20IMG_4211%20Sample%20Reconstruction%2C%20Reconstructed%20Region.png" height="250"/>
 
 The disparity map shows the apparent distance travelled by a particular object visible in both images. The closer an object is to the cameras, the greater the disparity, and the redder they will appear in the disparity map.
 
-[FINAL POINT CLOUD]
+<img src="https://raw.githubusercontent.com/lynna-deng/phone-stand-code/refs/heads/main/README%20Figures/IMG_4210%2C%20IMG_4211%20Sample%20Reconstruction%2C%20Disparity%20Map.png" height="250"/>
 
 The final 3D reconstruction!
+
+<img src="https://raw.githubusercontent.com/lynna-deng/phone-stand-code/refs/heads/main/README%20Figures/IMG_4210%2C%20IMG_4211%20Sample%20Reconstruction%2C%20Angle%201.png" height="250"/>
+
+[![Example 3D Reconstruction Video](https://img.youtube.com/vi/m56nWb8yBBU/0.jpg)](https://www.youtube.com/watch?v=m56nWb8yBBU)
 
 ## References
 
