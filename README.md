@@ -41,10 +41,11 @@ If the input and reference photos are from very different time points or otherwi
 3. Replace `C1_input_filepath`, `C2_input_filepath`, `C1_reference_filepath`, and `C2_reference_filepath` with the desired files or use the sample file paths already provided.
 4. Apply `stereoCam_alignImages`  with your filepaths, the desired output image filetype, the text file, and ‘Manual’ for `’DetectionMethod’`. An example is provided in Option 1 of `stereoCam_main.m`.
 5. Select the ground control points as accurately as possible in the input and reference photos. A video guide for GCP selection is below.
+   
    [![GCP Selection Video Guide](https://img.youtube.com/vi/wKJKCFUT2Hk/0.jpg)](https://www.youtube.com/watch?v=wKJKCFUT2Hk)
 
-6. The aligned image will be saved as `[photo file name]_registered.[registration file type]`.
-7. Apply `stereoCam_reconstructScene` to the two registered input photos to create your 3D reconstruction.
+7. The aligned image will be saved as `[photo file name]_registered.[registration file type]`.
+8. Apply `stereoCam_reconstructScene` to the two registered input photos to create your 3D reconstruction.
 
 The figures below were generated using the ground control points in `Sample GCP Point Names.txt` to align `C1 Sample Photo IMG_4211` (input) to `C1 Downstream Reference IMG_7948.jpg` (reference). In the anaglyphs, the reference image is shown in red, and the input image is shown in cyan. There are several regions where the true color is visible, indicating the alignment worked well in these regions. 
 
@@ -86,7 +87,9 @@ If there are regions in the images that share no features in common and may ther
 
 1. When calling `stereoCam_alignImages`, set `useMask` to true. An example is provided in Option 4 of `stereoCam_main.m`.
 2. Select the vertices of the desired polygonal mask in the input and reference photos. A video guide for mask selection is below.
+   
    [![GCP Selection Video Guide](https://img.youtube.com/vi/7PGJ43YLV-Y/0.jpg)](https://www.youtube.com/watch?v=7PGJ43YLV-Y)
+
 4. The aligned image will be saved as `[photo file name]_registered.[registration file type]`.
 5. Apply `stereoCam_reconstructScene` to the two registered input photos to create your 3D reconstruction.
 
